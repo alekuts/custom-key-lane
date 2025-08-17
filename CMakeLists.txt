@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.31)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(ASSETS_DIR ${CMAKE_SOURCE_DIR}/assets)
+file(COPY ${ASSETS_DIR} DESTINATION ${CMAKE_BINARY_DIR})
 
 project(custom_key_lane)
 
